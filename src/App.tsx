@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+
+import "./App.css";
+import { ButtonSteps } from "./components/ButtonSteps";
+import { Step } from "./components/Step";
+import { dataDefaultSteps } from "./utils/dataDefaultSteps";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentSteps, setcurrentSteps] = useState<number>(0);
+  const [formValues, setFormValues] = useState<{ [key: string]: string }>({});
 
+  console.log(formValues, "a");
+  const currentStepData =
+    dataDefaultSteps.find((step) => step.steps === currentSteps) ||
+    dataDefaultSteps[0];
+
+  const handleChange = (event: { target: { value: string } }) => {
+    if (currentStepData) {
+      setFormValues((prevValues) => ({
+        ...prevValues,
+        [currentStepData.value]: event.target.value,
+      }));
+    }
+  };
+
+  const handleSelectValue = (item: string) => {
+    if (currentStepData) {
+      setFormValues((prevValues) => ({
+        ...prevValues,
+        [currentStepData.value]: item,
+      }));
+    }
+  };
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {currentStepData && (
+        <Step
+          currentSteps={currentSteps}
+          name={formValues.name}
+          text={currentStepData.text}
+          question={currentStepData.question}
+          inputType={currentStepData.input_type}
+          defaultValues={currentStepData.default_values}
+          value={formValues[currentStepData.value] || ""}
+          onChange={handleChange}
+          handleSelectValue={handleSelectValue}
+        />
+      )}
+
+      <ButtonSteps
+        currentSteps={currentSteps}
+        setcurrentSteps={setcurrentSteps}
+        label={currentStepData?.label}
+        value={formValues[currentStepData.value] || ""}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
