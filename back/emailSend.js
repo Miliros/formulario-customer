@@ -7,7 +7,7 @@ const sendEmail = async () => {
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      //to: "anthony@customerscoops.com",
+      //to: "anthony@customerscoops.com" actualmente solamente resend me deja agregar mi propio mail como dominio no me acepta el indicado
       to: "milagros4046@hotmail.com",
       subject: "Hello World",
       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
