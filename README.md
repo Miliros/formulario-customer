@@ -64,3 +64,6 @@ npm run dev
 
 La aplicación debería estar disponible en http://localhost:3000, mientras que el backend escucha en http://localhost:4000
 ```
+
+## Tener en cuenta :
+ Envie invitacion a anthony@customerscoops.com a mi cuenta de Resend https://resend.com/ para que puedas visualizar que el email se envia correctamente ya que no me permite utilizar tu dominio porque ya esta en uso.
