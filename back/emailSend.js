@@ -5,9 +5,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const sendEmail = async () => {
   try {
-    const response = await resend.emails.send({
+    await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "anthony@customerscoops.com",
+      //to: "anthony@customerscoops.com",
+      to: "milagros4046@hotmail.com",
       subject: "Hello World",
       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
     });
