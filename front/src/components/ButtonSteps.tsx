@@ -37,9 +37,11 @@ export const ButtonSteps = ({
           "Content-Type": "application/json",
         },
       });
-      window.location.href = "https://www.customerscoops.com/";
 
-      console.log("entra aca response", response);
+      console.log("entra aca response", response.ok);
+      if (response.ok) {
+        window.location.href = "https://www.customerscoops.com/";
+      }
     } catch (error) {
       window.location.href = "https://www.customerscoops.com/";
       console.error("Error:", error);

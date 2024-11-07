@@ -9,7 +9,7 @@ const sendEmail = async () => {
   try {
     const response = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "milagros4046@hotmail.com",
+      to: "anthony@customerscoops.com",
       subject: "Hello World",
       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
     });
