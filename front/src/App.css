@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0px;
+  font-family: "K2D", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 99vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container-color {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 99vh;
+  background: linear-gradient(283.73deg, #231331 -29.4%, #00ccbc 100%);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.left-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 120px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.imgLogo {
+  width: 98px;
+  height: 38.18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.text-right-side {
+  position: absolute;
+  top: 60px;
+  right: 45px;
+  color: #231331;
+  font-family: "SF Pro", sans-serif;
+
+  font-size: 13px;
+  z-index: 1;
+}
+
+.highlighted-step {
+  font-family: "SF Pro", sans-serif;
+  margin: 3px;
+  font-size: 22px;
+  font-weight: 590;
+}
+
+.right-side-5 {
+  display: flex;
+  width: 55%;
+}
+
+.right-side {
+  display: flex;
+  width: 55%;
+  background: linear-gradient(283.73deg, #231331 -29.4%, #00ccbc 100%);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.img-rectangle {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .right-side {
+    order: 1;
+    width: 100%;
+    /* height: 50%; */
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .left-side {
+    order: 2;
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .container-color {
+    flex-direction: column;
+    background: #fff;
+  }
+  .right-side-5 {
+    width: 100%;
+    background: linear-gradient(283.73deg, #231331 -29.4%, #00ccbc 100%);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+  }
 }

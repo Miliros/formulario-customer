@@ -1,9 +1,10 @@
-// import axios from "axios";
-// import Email from "./Email";
+import "../styles/ButtonSteps.css";
+
+import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 
 interface ButonStepsProps {
   currentSteps: number;
-  setcurrentSteps: (currentSteps: number) => void;
+  setcurrentSteps?: (currentSteps: number) => void;
   label: string | undefined;
   value: string;
 }
@@ -16,21 +17,22 @@ export const ButtonSteps = ({
 }: ButonStepsProps) => {
   const handleNextSteps = () => {
     if (currentSteps < 6) {
-      setcurrentSteps(currentSteps + 1);
+      setcurrentSteps?.(currentSteps + 1);
     }
   };
 
   const handlePrevSteps = () => {
     if (currentSteps >= 1) {
-      setcurrentSteps(currentSteps - 1);
+      setcurrentSteps?.(currentSteps - 1);
     }
   };
 
   const handleSendEmail = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    window.location.href = "https://www.customerscoops.com/";
 
     try {
-      const response = await fetch("http://localhost:4000/send-email", {
+      const response = await fetch(`${import.meta.env.VITE_API}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,15 +45,21 @@ export const ButtonSteps = ({
   };
 
   return (
-    <div>
+    <div className="conteiner">
       {currentSteps !== 0 && currentSteps !== 5 && (
-        <button onClick={handlePrevSteps}>Anterior</button>
+        <button onClick={handlePrevSteps} className="round-button">
+          <IconArrowNarrowLeft stroke={2} />
+        </button>
       )}
       <button
         onClick={currentSteps === 5 ? handleSendEmail : handleNextSteps}
         disabled={value === "" && currentSteps !== 5}
+        className="button"
       >
         {label}
+        {label === "Siguiente" && (
+          <IconArrowNarrowRight className="arrow-icon " stroke={2} />
+        )}
       </button>
     </div>
   );

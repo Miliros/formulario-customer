@@ -1,7 +1,13 @@
+const updateStrong = (texto: string) => {
+  return `<strong>${texto}</strong>`;
+};
+
 export const dataDefaultSteps = [
   {
     steps: 0,
-    text: "Muchas gracias por tu interés en conocer customerScoops, que a través de Formularios Conversacionales Inteligente te ayudamos a aumentar el revenue y rentabilidad de tu negocio.",
+    text: `Muchas gracias por tu interés en conocer ${updateStrong(
+      "customerScoops"
+    )}, que a través de Formularios Conversacionales Inteligentes te ayudamos a aumentar el revenue y la rentabilidad de tu negocio.`,
     question: "Queremos conocerte, ¿cuál es tu nombre?",
     input_type: "text",
     default_values: [],
@@ -46,7 +52,7 @@ export const dataDefaultSteps = [
   {
     steps: 3,
     text: "",
-    question: "¿Cuál CRM están utilizando en tu empresa?",
+    question: "¿Cuál CRM están utilizando en tu empresa? CRM:",
     input_type: "select",
     default_values: [
       "SAP",
@@ -64,7 +70,7 @@ export const dataDefaultSteps = [
   },
   {
     steps: 4,
-    text: "Ahora te vamos a sorprender... ",
+    text: `${updateStrong("Ahora te vamos a sorprender... ")}`,
     question: "¿A cuál industria pertenece tu empresa?",
     input_type: "select",
     default_values: [
@@ -85,8 +91,8 @@ export const dataDefaultSteps = [
   },
   {
     steps: 5,
-    text: "Muchas Gracias ",
-    question: "por querer ser parte de la familia Scoopers. Nos vemos pronto",
+    text: `${updateStrong("Muchas Gracias")}`,
+    question: "por querer ser parte de la familia Scoopers. Nos vemos pronto!",
     input_type: undefined,
     default_values: [],
     label: "Finalizar",
