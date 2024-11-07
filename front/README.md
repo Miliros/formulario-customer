@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Prueba Técnica de Desarrollo Front End - Customer Scoops
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Gracias por la oportunidad de participar en este test! A continuación, describo mi enfoque y los pasos necesarios para ejecutar este proyecto.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto consiste en la maquetación de un formulario proporcionado en Figma, utilizando las tecnologías especificadas, y en la configuración del envío de un correo electrónico con el diseño implementado. La aplicación está dividida en dos partes: una aplicación frontend en React y una API backend en Node.js.
 
-## Expanding the ESLint configuration
+## Enlaces
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Despliegue de la aplicación**: (https://formulario-customer.vercel.app/)
+- **Repositorio en GitHub**: (https://github.com/Miliros/formulario-customer.git)
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologías Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+  - **Lenguaje**: TypeScript
+  - **Framework**: React
+  - **Herramienta de desarrollo**: Vite
+  - **Componentización**: Estructura modular y reutilizable
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Backend**:
+  - **Servidor**: Node.js y Express
+  - **Envío de Correo**: Plataforma Resend
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Instrucciones de Configuración y Ejecución
+
+### 1. Clonar el Repositorio
+
+```bash
+git clone https://github.com/tuusuario/formulario-customer.git
+cd formulario-customer
+
+### 2. Configuración del Entorno
+Para ejecutar correctamente el proyecto, es necesario configurar las variables de entorno.
+
+Frontend
+En el archivo .env en la carpeta raíz del frontend:
+VITE_API="http://localhost:4000"
+
+Backend
+En el archivo .env en la carpeta back:
+PORT=4000
+RESEND_API_KEY="re_PCNnUH9n_4yFzYzTUPiNqUKzUtuv8fCDp"
+3. INSTALACION DE DEPENDENCIAS
+# Frontend
+cd formulario-customer
+npm install
+
+# Backend
+cd back
+npm install
+
+4. EJECUCION DEL PROYECCTO
+
+# Ejecuta el backend
+cd back
+npm run dev
+
+# En otra terminal, ejecuta el frontend
+cd formulario-customer
+npm run dev
+
+La aplicación debería estar disponible en http://localhost:3000, mientras que el backend escucha en http://localhost:4000
 ```
