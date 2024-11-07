@@ -29,7 +29,6 @@ export const ButtonSteps = ({
 
   const handleSendEmail = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    window.location.href = "https://www.customerscoops.com/";
 
     try {
       const response = await fetch(`${import.meta.env.VITE_API}/send-email`, {
@@ -38,8 +37,11 @@ export const ButtonSteps = ({
           "Content-Type": "application/json",
         },
       });
+      window.location.href = "https://www.customerscoops.com/";
+
       console.log("entra aca response", response);
     } catch (error) {
+      window.location.href = "https://www.customerscoops.com/";
       console.error("Error:", error);
     }
   };
