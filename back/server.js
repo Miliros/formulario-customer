@@ -1,21 +1,18 @@
 const express = require("express");
 const { sendEmail } = require("./emailSend");
-const cors = require("cors"); // Importar CORS
+const cors = require("cors");
 
 require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Configurar CORS
-app.use(cors()); // Permite todas las solicitudes CORS
+app.use(cors());
 
 app.use(express.json());
 
-// Ruta para enviar correo
 app.post("/send-email", async (req, res) => {
   try {
-    // Llamada a la función que envía el correo
     await sendEmail();
     res.status(200).json({ message: "Correo enviado con éxito" });
   } catch (error) {
@@ -23,7 +20,6 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-// Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
