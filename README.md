@@ -45,7 +45,7 @@ PORT=4000
 RESEND_API_KEY="re_PCNnUH9n_4yFzYzTUPiNqUKzUtuv8fCDp"
 3. INSTALACION DE DEPENDENCIAS
 # Frontend
-cd formulario-customer
+cd front
 npm install
 
 # Backend
@@ -59,11 +59,11 @@ cd back
 npm run dev
 
 # En otra terminal, ejecuta el frontend
-cd formulario-customer
+cd front
 npm run dev
 
 La aplicación debería estar disponible en http://localhost:3000, mientras que el backend escucha en http://localhost:4000
 ```
 
 ## Tener en cuenta :
- Envie invitacion a anthony@customerscoops.com a mi cuenta de Resend https://resend.com/ para que puedas visualizar que el email se envia correctamente ya que no me permite utilizar tu dominio porque ya esta en uso.
+Envíe invitación a anthony@customerscoops.com a mi cuenta de Resend https://resend.com/ para que puedas visualizar que el email se envia correctamente ya que no me permite utilizar tu dominio porque ya está en uso.
