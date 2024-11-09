@@ -35,7 +35,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 1px solid rgba(35, 19, 49, 0.5);
+  border: 1px solid rgba(35, 19, 49, 0.342);
   padding: 7px;
 }
 
@@ -61,4 +61,25 @@
 
 .round-button:hover {
   background-color: #f0f0f0;
+}
+@media (max-width: 768px) {
+  .conteiner {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+    align-items: center;
+  }
+  .round-button {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin-right: 6px;
+  }
 }

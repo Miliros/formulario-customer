@@ -5,16 +5,28 @@
   font-family: "K2D", sans-serif;
   color: #231331;
   text-align: left;
-  max-width: 400px;
+
+  max-width: 340px;
+}
+.question-step-5 {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 13.7px;
+  font-family: "K2D", sans-serif;
+  color: #231331;
+  text-align: left;
+  max-width: 340px;
 }
 
 .input-text {
   border: none;
   border-bottom: 1px solid #23133180;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
+  width: 300px;
   max-width: 400px;
   color: #23133180;
   outline: none;
+  margin-top: 22px;
 }
 
 .input-text::placeholder {
@@ -45,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 12px;
   font-size: 11.5px;
   font-family: "SF Pro", sans-serif;
   font-weight: 510;
@@ -61,7 +73,10 @@
   background-color: #231331;
   color: #ffffff;
 }
-
+.italic {
+  font-style: italic !important;
+  margin-top: 20px;
+}
 .circle {
   background: #00ccbc;
   color: white;
@@ -79,6 +94,7 @@
   justify-content: flex-start;
   text-align: left;
   padding: 5px;
+  width: 92%;
 }
 @media (max-width: 768px) {
   .header-text {
@@ -87,13 +103,24 @@
   }
 
   .input-text {
-    width: 85%;
+    max-width: 85%;
+    outline: none;
+    background: #ffffff;
+  }
+  .options-container {
+    width: 100%;
+    gap: 7px;
   }
   .options-container.three-columns {
     grid-template-columns: repeat(2, 1fr);
   }
   .options-container.two-columns {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .options-container.three-columns > .option:nth-child(odd):last-child {
+    grid-column: span 2;
+    width: 90%;
+    margin: 0;
   }
   .option {
     max-width: 100%;

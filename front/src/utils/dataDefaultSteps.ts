@@ -92,7 +92,7 @@ export const dataDefaultSteps = [
   {
     steps: 5,
     text: `${updateStrong("Muchas Gracias")}`,
-    question: "por querer ser parte de la familia Scoopers. Nos vemos pronto!",
+    question: "por querer ser parte de la familia Scooper.",
     input_type: undefined,
     default_values: [],
     label: "Finalizar",
