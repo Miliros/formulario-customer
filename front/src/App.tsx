@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import logoStep from "../public/assets/logoStep.png";
 import imgGroupe178 from "../public/assets/Group-178.png";
-
+import imgSmall from "../public/assets/img-small.png";
 import { dataDefaultSteps } from "./utils/dataDefaultSteps";
 import { ContentStep } from "./components/ContentStep";
 import { ButtonSteps } from "./components/ButtonSteps";
@@ -68,8 +68,13 @@ function App() {
           </p>
           <img
             src={imgGroupe178}
-            className="img-rectangle"
+            className="img-rectangle img-large"
             alt="img-group-step-5"
+          />
+          <img
+            src={imgSmall}
+            className="img-rectangle img-small"
+            alt="img-small"
           />
         </div>
       </div>

@@ -25,10 +25,14 @@ export const ContentStep = ({
         </div>
       )}
 
-      <div className="header-text">
-        <p style={{ marginTop: currentSteps === 5 ? "0px" : "17px" }}>
-          {question}
-        </p>
+      <div
+        className={`header-text ${currentSteps === 5 ? "question-step-5" : ""}`}
+        style={{
+          marginTop: currentSteps === 5 ? "0px" : "17px",
+          padding: "0px",
+        }}
+      >
+        {question}
       </div>
 
       {inputType === "text" && (
