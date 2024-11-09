@@ -1,5 +1,6 @@
 .conteiner {
-  margin-top: 40px;
+  padding-top: 29px;
+  margin-bottom: 10px;
 }
 
 .button {
@@ -7,26 +8,35 @@
   border: none;
   color: #ffffff;
   width: 140px;
-  height: 40px;
   border-radius: 50px;
   font-family: "SF Pro", sans-serif;
   font-size: 11.5px;
   font-weight: 510;
-  line-height: 1;
+  line-height: 13.13px;
   text-align: center;
-  padding: 0 12px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.button:disabled {
-  background-color: #808080;
-}
+
 .arrow-icon {
-  margin-left: 4px;
+  margin-left: 14px;
   color: #13847b;
-  font-size: 16px;
+}
+
+.button:disabled {
+  background-color: rgba(35, 19, 49, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+.arrow-icon-prev {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgba(35, 19, 49, 0.5);
+  padding: 7px;
 }
 
 .round-button {
@@ -35,7 +45,7 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: 2px solid #231331ad;
+  border: 2px solid #231331;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -43,7 +53,7 @@
   margin-bottom: 5px;
   position: relative;
   left: -56px;
-  top: 41px;
+  top: 39px;
   color: #231331;
   font-size: 16px;
   font-family: "SF Pro", sans-serif;
@@ -51,26 +61,4 @@
 
 .round-button:hover {
   background-color: #f0f0f0;
-}
-
-@media (max-width: 768px) {
-  .conteiner {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 28px;
-    align-items: center;
-  }
-  .round-button {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    margin-right: 6px;
-  }
 }

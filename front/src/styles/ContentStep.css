@@ -5,24 +5,16 @@
   font-family: "K2D", sans-serif;
   color: #231331;
   text-align: left;
-  max-width: 340px;
-  margin-bottom: 15px;
-}
-.header-text.question-step-5 {
-  font-size: 14px;
-  line-height: 30px;
-  padding: 0px;
-  margin: 0px;
+  max-width: 400px;
 }
 
 .input-text {
   border: none;
   border-bottom: 1px solid #23133180;
   padding-bottom: 10px;
-  width: 310px;
+  max-width: 400px;
   color: #23133180;
   outline: none;
-  margin-top: 10px;
 }
 
 .input-text::placeholder {
@@ -53,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px;
+  padding: 8px;
   font-size: 11.5px;
   font-family: "SF Pro", sans-serif;
   font-weight: 510;
@@ -62,7 +54,7 @@
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
-  /* max-width: 180px; */
+  max-width: 180px;
 }
 
 .option.selected {
@@ -75,31 +67,23 @@
   color: white;
   border-radius: 50%;
   font-family: "SF Pro", sans-serif;
-  width: 24px;
-  height: 24px;
+  padding: 7.5px;
   font-size: 10px;
   font-weight: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+  line-height: 11.93px;
   text-align: center;
   margin-right: 10px;
-  min-width: 24px;
 }
 
 .option.challenge {
   justify-content: flex-start;
   text-align: left;
   padding: 5px;
-  width: 270px;
 }
 @media (max-width: 768px) {
   .header-text {
-    margin-bottom: 30px;
+    margin: 0px;
     max-width: 85%;
-    text-align: left;
-    width: 85%;
   }
 
   .input-text {
@@ -107,16 +91,11 @@
   }
   .options-container.three-columns {
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
   }
-
   .options-container.two-columns {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .options-container.three-columns > .option:nth-child(odd):last-child {
-    grid-column: span 2;
-    width: 90%;
-    margin: 0;
+  .option {
+    max-width: 100%;
   }
 }
