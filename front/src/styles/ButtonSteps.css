@@ -22,7 +22,7 @@
 }
 
 .arrow-icon {
-  margin-left: 14px;
+  margin-left: 6px;
   color: #13847b;
 }
 
@@ -32,8 +32,8 @@
   cursor: not-allowed;
 }
 .arrow-icon-prev {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: 1px solid rgba(35, 19, 49, 0.342);
   padding: 7px;
@@ -81,5 +81,6 @@
     height: 35px;
     display: flex;
     margin-right: 6px;
+    margin-bottom: 5px;
   }
 }

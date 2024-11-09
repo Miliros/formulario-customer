@@ -125,4 +125,7 @@
   .option {
     max-width: 100%;
   }
+  .question-step-5 {
+    line-height: 24px;
+  }
 }
