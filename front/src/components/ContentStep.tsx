@@ -21,20 +21,29 @@ export const ContentStep = ({
         </div>
       ) : (
         <div className="header-text">
-          <p dangerouslySetInnerHTML={{ __html: text }} />
+          <p
+            className={`header-text ${
+              currentSteps === 5 ? "question-step-5-p" : ""
+            }`}
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
         </div>
       )}
 
       <div
         className={`header-text ${currentSteps === 5 ? "question-step-5" : ""}`}
       >
-        <p>{question}</p>
+        <p className={currentSteps === 5 ? "question-step-5-p" : ""}>
+          {question}
+        </p>
       </div>
+
       {currentSteps === 5 && (
         <div className="header-text">
           <p className="italic">Nos vemos pronto!</p>
         </div>
       )}
+      {currentSteps === 3 && <div className="header-text">CRM:</div>}
 
       {inputType === "text" && (
         <input

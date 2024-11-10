@@ -62,7 +62,7 @@ export const ButtonSteps = ({
       >
         {label}
         {label === "Siguiente" && (
-          <IconArrowNarrowRight className="arrow-icon " stroke={2} />
+          <IconArrowNarrowRight className="arrow-icon " stroke={1} />
         )}
       </button>
     </div>

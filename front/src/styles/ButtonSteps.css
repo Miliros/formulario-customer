@@ -1,28 +1,40 @@
 .conteiner {
   padding-top: 29px;
   margin-bottom: 10px;
+  height: 35px;
+}
+.button,
+.round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+
+  height: 100%;
+  font-family: "SF Pro", sans-serif;
+  cursor: pointer;
+  /* padding: 18px; */
 }
 
 .button {
   background-color: #231331;
-  border: none;
   color: #ffffff;
-  width: 140px;
+  border: none;
+  height: 100%;
+
+  min-width: 140px;
+  max-width: 140px;
   border-radius: 50px;
-  font-family: "SF Pro", sans-serif;
   font-size: 11.5px;
-  font-weight: 510;
-  line-height: 13.13px;
-  text-align: center;
-  padding: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }
 
 .arrow-icon {
   margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: #13847b;
 }
 
@@ -36,27 +48,23 @@
   height: 12px;
   border-radius: 50%;
   border: 1px solid rgba(35, 19, 49, 0.342);
-  padding: 7px;
+  margin: 0px;
 }
 
 .round-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #231331;
+  width: 37px;
+  height: 36px;
+  border: 1px solid #231331;
   border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  margin-bottom: 5px;
+  background-color: #ffffff;
   position: relative;
   left: -56px;
-  top: 39px;
+  top: 35px;
   color: #231331;
   font-size: 16px;
   font-family: "SF Pro", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .round-button:hover {
@@ -77,10 +85,10 @@
     align-items: center;
     left: 0;
     top: 0;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     display: flex;
-    margin-right: 6px;
+    margin-right: 16px;
     margin-bottom: 5px;
   }
 }

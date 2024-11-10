@@ -52,7 +52,7 @@ export const dataDefaultSteps = [
   {
     steps: 3,
     text: "",
-    question: "¿Cuál CRM están utilizando en tu empresa? CRM:",
+    question: "¿Cuál CRM están utilizando en tu empresa?",
     input_type: "select",
     default_values: [
       "SAP",

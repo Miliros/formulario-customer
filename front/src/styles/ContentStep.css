@@ -1,21 +1,28 @@
 .header-text {
   font-weight: 300;
   font-size: 17px;
-  line-height: 24.7px;
+  /* line-height: 24.7px; */
   font-family: "K2D", sans-serif;
   color: #231331;
   text-align: left;
 
   max-width: 340px;
 }
-.question-step-5 {
+.header-text-5 {
   font-weight: 300;
-  font-size: 17px;
-  line-height: 13.7px;
+  font-size: 22px;
+  line-height: 24.7px;
   font-family: "K2D", sans-serif;
   color: #231331;
   text-align: left;
-  max-width: 340px;
+}
+p {
+  margin-bottom: -1px;
+}
+.question-step-5-p {
+  max-width: 380px;
+  margin: -1px;
+  font-size: 28px;
 }
 
 .input-text {
@@ -99,11 +106,11 @@
 @media (max-width: 768px) {
   .header-text {
     margin: 0px;
-    max-width: 85%;
+    max-width: 80%;
   }
 
   .input-text {
-    max-width: 85%;
+    width: 80%;
     outline: none;
     background: #ffffff;
   }
@@ -125,7 +132,11 @@
   .option {
     max-width: 100%;
   }
-  .question-step-5 {
-    line-height: 24px;
+  p {
+    margin-bottom: -3px;
+  }
+  .question-step-5-p {
+    max-width: 60%;
+    font-size: 25px;
   }
 }
