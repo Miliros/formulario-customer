@@ -20,7 +20,6 @@ const sendEmail = async () => {
               font-family: "K2D", sans-serif;
               color: #231331;
               margin: 0;
-              padding: 20px;
               max-width: 100%;
               text-align: left;
             }
