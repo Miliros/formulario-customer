@@ -27,12 +27,10 @@ const sendEmail = async () => {
             .email-content {
               width: 100%;
               margin: 0;
-              padding-left:15px;
             }
 
         .email-header {
         width: 100%;
-        height: 370px; 
 }
         .email-header img {
       width: 100%;
@@ -87,7 +85,7 @@ const sendEmail = async () => {
         <body>
           <div class="email-content">
             <div class="email-header">
-              <img src="https://res.cloudinary.com/dv0mf6px6/image/upload/v1731273826/Group_175_keywit.png" alt="Header Image" style="max-width: 100%;" />
+              <img src="https://res.cloudinary.com/dv0mf6px6/image/upload/v1731280181/Group_175_1_bmvt5g.png" alt="Header Image" style="max-width: 100%;" />
             </div>
 
             <div class="content-text">

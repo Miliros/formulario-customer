@@ -12,7 +12,6 @@ p {
   flex-direction: row;
   height: 99vh;
   justify-content: center;
-  padding-top: 4px;
 }
 .container-color {
   display: flex;
