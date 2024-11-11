@@ -94,6 +94,9 @@ p {
   font-weight: 1000;
   line-height: 11.93px;
   text-align: center;
+
+  width: 10px;
+  min-width: 10px;
   margin-right: 10px;
 }
 
@@ -136,7 +139,7 @@ p {
     margin-bottom: -3px;
   }
   .question-step-5-p {
-    max-width: 64%;
+    max-width: 67%;
     font-size: 25px;
   }
 }
