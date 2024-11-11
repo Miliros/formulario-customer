@@ -23,6 +23,9 @@ Este proyecto consiste en la maquetación de un formulario proporcionado en Figm
 - **Backend**:
   - **Servidor**: Node.js y Express
   - **Envío de Correo**: Plataforma Resend
+  - IMAGEN DE COMO LLEGA EL E-MAIL
+  - ![image](https://github.com/user-attachments/assets/5e785055-ba67-4fa9-8a7c-28fdefff4f32)
+
 
 ## Instrucciones de Configuración y Ejecución
 
