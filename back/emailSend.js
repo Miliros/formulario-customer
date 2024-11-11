@@ -34,7 +34,7 @@ const sendEmail = async () => {
   height: 284px;
   display: flex;
   justify-content: center;
-  // padding-left: 18px;
+  padding-left: 18px;
 }
   .email-header img {
 width: 650px;
