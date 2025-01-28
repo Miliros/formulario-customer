@@ -1,4 +1,9 @@
 # Implementación de un Diseño de Figma a Código con React
+![image](https://github.com/user-attachments/assets/18b71e2f-20bb-4a38-a6ad-eb40b77fead2)
+![image](https://github.com/user-attachments/assets/543ebc77-93a8-4906-b0d2-b35d97edfd1a)
+![image](https://github.com/user-attachments/assets/25b82b92-d7bb-4120-958d-5ccec734a259)
+
+
 
 
 ## Descripción
